@@ -50,3 +50,4 @@ export { default as WTransitionSlide } from './transitions/w-transition-slide.vu
 export { default as WTransitionSlideFade } from './transitions/w-transition-slide-fade.vue'
 export { default as WTransitionTwist } from './transitions/w-transition-twist.vue'
 export { default as WTree } from './w-tree.vue'
+export { default as WSplitView } from './w-split-view/index.vue'

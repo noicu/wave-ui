@@ -16,7 +16,7 @@
             color="white"
             round) Deprecated
           span.grey.ml2(v-else)
-            | Default:
+            | 默认:
             strong.default-value.code.deep-orange-light1.ml2 {{ item.default }}
         p(v-html="item.description")
         .mt2(v-if="item.params")

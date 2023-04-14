@@ -9,7 +9,7 @@
       slot(v-else)
     w-button.mla.mb3(outline force-link @click="scrollToApi")
       w-icon.ml-1.mr1.chevron-down(lg) wi-chevron-down
-      | Jump to the API
+      | 跳转到API
 
   alert.mt4.mb12(v-if="inProgress" warning).
     While a component is in progress, the props, slots and events may change when you upgrade.#[br]

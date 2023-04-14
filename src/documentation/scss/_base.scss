@@ -1,19 +1,35 @@
-html, body {height: 100%;}
+html,
+body {
+  height: 100%;
+}
 
 :root {
   --header-waves-pattern: rgba(73, 123, 162, 0.2);
   scroll-behavior: smooth;
 }
 
-a {color: $links;}
+a {
+  color: $links;
+}
 
-ul, ol {margin-left: 4 * $base-increment + 2px;}
-.w-list--icon .w-list__item-bullet {color: green;}
-.w-list--icon .w-list__item-bullet.wi-minus {color: rgb(213, 117, 0);}
+ul,
+ol {
+  margin-left: 4 * $base-increment + 2px;
+}
+.w-list--icon .w-list__item-bullet {
+  color: green;
+}
+.w-list--icon .w-list__item-bullet.wi-minus {
+  color: rgb(213, 117, 0);
+}
 
-p {margin-bottom: 2 * $base-increment;}
+p {
+  margin-bottom: 2 * $base-increment;
+}
 
-.ovh {overflow: hidden;}
+.ovh {
+  overflow: hidden;
+}
 
 .main-content {
   max-width: 100%;
@@ -26,49 +42,109 @@ p {margin-bottom: 2 * $base-increment;}
   margin: 1em 0;
   line-height: 1.3;
 
-  &[data-label] {margin: 2em 0 1em;}
-  &[data-label]:before {font-weight: bold;}
+  &[data-label] {
+    margin: 2em 0 1em;
+  }
+  &[data-label]:before {
+    font-weight: bold;
+  }
 }
 
-.nav-menu ~ .main-content {padding-left: 4em;}
+.nav-menu ~ .main-content {
+  padding-left: 4em;
+}
 
 footer {
   margin-top: 5em;
 
-  .nav-drawer ~ & {padding-left: 12px;}
+  .nav-drawer ~ & {
+    padding-left: 12px;
+  }
 
-  .heart:hover {animation: heartbeat 1s infinite;}
-  small {font-size: 10px;}
-  .caption {padding-top: 1px;}
+  .heart:hover {
+    animation: heartbeat 1s infinite;
+  }
+  small {
+    font-size: 10px;
+  }
+  .caption {
+    padding-top: 1px;
+  }
 }
 
 @keyframes heartbeat {
-  0%, 30%, 60%, 100% {transform: scale(1);}
-  15%, 45% {transform: scale(1.2);}
+  0%,
+  30%,
+  60%,
+  100% {
+    transform: scale(1);
+  }
+  15%,
+  45% {
+    transform: scale(1.2);
+  }
 }
 
 // Vue Transitions.
 // --------------------------------------------------------
-.fade-page-enter-active, .fade-page-leave-from-active {transition: opacity 0.12s;}
-.fade-page-enter-from, .fade-page-leave-to {opacity: 0;}
+.fade-page-enter-active,
+.fade-page-leave-from-active {
+  transition: opacity 0.12s;
+}
+.fade-page-enter-from,
+.fade-page-leave-to {
+  opacity: 0;
+}
 
 // Media queries.
 // --------------------------------------------------------
 @media screen and (max-width: 560px) {
-  button.go-top {display: none;}
+  button.go-top {
+    display: none;
+  }
 }
 
 // MEDIA QUERIES.
 // --------------------------------------------------------
 @media screen and (max-width: 600px) {
-  .title-link .hash {display: none;}
+  .title-link .hash {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 450px) {
-  .w-app .content-wrap {padding-left: 8px;padding-right: 8px;}
-  .ssh-pre__content {padding-top: 12px;}
-  .w-app .example {
-    .ssh-pre__copy {top: -2px;right: -2px;}
-    .ssh-pre[data-label]:before {top: 5px;}
+  .w-app .content-wrap {
+    padding-left: 8px;
+    padding-right: 8px;
   }
+  .ssh-pre__content {
+    padding-top: 12px;
+  }
+  .w-app .example {
+    .ssh-pre__copy {
+      top: -2px;
+      right: -2px;
+    }
+    .ssh-pre[data-label]:before {
+      top: 5px;
+    }
+  }
+}
+
+*::-webkit-scrollbar {
+  /*滚动条整体样式*/
+  width: 6px; /*高宽分别对应横竖滚动条的尺寸*/
+  height: 1px;
+}
+*::-webkit-scrollbar-thumb {
+  /*滚动条里面深色条*/
+  border-radius: 10px;
+  box-shadow: inset 0 0 5px rgba(236, 236, 236, 0.1);
+  background: #bababa31;
+}
+*::-webkit-scrollbar-track {
+  /*滚动条里面轨道*/
+  box-shadow: inset 0 0 5px rgba(236, 236, 236, 0.1);
+  border-radius: 10px;
+  background: #7979791c;
 }

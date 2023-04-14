@@ -38,6 +38,7 @@ export const UIComponents = [
   { id: 'spinner', label: 'Spinner' },
   { id: 'steps', label: 'Steps', disabled: true },
   { id: 'switch', label: 'Switch', formElement: true },
+  { id: 'split-view', label: 'Split View' },
   { id: 'tabs', label: 'Tabs' },
   { id: 'table', label: 'Table' },
   { id: 'tag', label: 'Tag' },
